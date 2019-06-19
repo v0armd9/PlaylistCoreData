@@ -11,6 +11,10 @@
 		2C6D968222BA7A5800EEF069 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C6D968022BA7A5800EEF069 /* Main.storyboard */; };
 		2C6D968422BA7A5A00EEF069 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C6D968322BA7A5A00EEF069 /* Assets.xcassets */; };
 		2C6D968722BA7A5A00EEF069 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C6D968522BA7A5A00EEF069 /* LaunchScreen.storyboard */; };
+		2CA6638E22BA814700B1C6EB /* PlaylistCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2CA6638C22BA814700B1C6EB /* PlaylistCoreData.xcdatamodeld */; };
+		2CA6639022BA823A00B1C6EB /* Playlist+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA6638F22BA823A00B1C6EB /* Playlist+Convenience.swift */; };
+		2CA6639222BA827E00B1C6EB /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA6639122BA827E00B1C6EB /* CoreDataStack.swift */; };
+		2CA6639422BA84AD00B1C6EB /* Song+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA6639322BA84AD00B1C6EB /* Song+Convenience.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,10 @@
 		2C6D968322BA7A5A00EEF069 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C6D968622BA7A5A00EEF069 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C6D968822BA7A5A00EEF069 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CA6638D22BA814700B1C6EB /* PlaylistCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PlaylistCoreData.xcdatamodel; sourceTree = "<group>"; };
+		2CA6638F22BA823A00B1C6EB /* Playlist+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Playlist+Convenience.swift"; sourceTree = "<group>"; };
+		2CA6639122BA827E00B1C6EB /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		2CA6639322BA84AD00B1C6EB /* Song+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Song+Convenience.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +82,10 @@
 		2CA6638822BA7D9900B1C6EB /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2CA6638C22BA814700B1C6EB /* PlaylistCoreData.xcdatamodeld */,
+				2CA6638F22BA823A00B1C6EB /* Playlist+Convenience.swift */,
+				2CA6639122BA827E00B1C6EB /* CoreDataStack.swift */,
+				2CA6639322BA84AD00B1C6EB /* Song+Convenience.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -172,7 +184,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CA6638E22BA814700B1C6EB /* PlaylistCoreData.xcdatamodeld in Sources */,
+				2CA6639422BA84AD00B1C6EB /* Song+Convenience.swift in Sources */,
 				2C6D967D22BA7A5800EEF069 /* AppDelegate.swift in Sources */,
+				2CA6639022BA823A00B1C6EB /* Playlist+Convenience.swift in Sources */,
+				2CA6639222BA827E00B1C6EB /* CoreDataStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,7 +335,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = PlaylistCoreData/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PlaylistCoreData/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -336,7 +352,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = PlaylistCoreData/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PlaylistCoreData/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -370,6 +386,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2CA6638C22BA814700B1C6EB /* PlaylistCoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2CA6638D22BA814700B1C6EB /* PlaylistCoreData.xcdatamodel */,
+			);
+			currentVersion = 2CA6638D22BA814700B1C6EB /* PlaylistCoreData.xcdatamodel */;
+			path = PlaylistCoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 2C6D967122BA7A5800EEF069 /* Project object */;
 }
